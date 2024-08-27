@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    
+    <title>Главная страница</title>
+    <!-- <style>стили для всех элементов тега </style> -->
+     <style>
+        td, th {
+            border: solid 1px black
+        }
+        th {
+            color: red;
+        }
+      table {
+        /* border-collapse: collapse;-убирает двайные границы в таблице */
+        border-collapse: collapse;
+        width: 50%;
+      }
+     </style>
+</head>
+<body>
+    <h1>Таблицы, изображение и ссылки</h1>
+    <!-- <a href="#table-1"> переход по ссылке, обязательно # для id -->
+    <a href="#table-1">
+        <img src="img/Без названия.jpeg" alt="смешной котик" width="200px" height="200px"/>
+    </a>
+    
+    <!-- <table>таблица</table> -->
+    <!-- <thead>голова таблицы, заголовок таблицы,самая вершняя строка</thead> -->
+    <!-- <Tr>строка в таблице</Tr><td>столбец</td>но в thead столбец будет <th></th> -->
+    <!-- <tbody>тело таблицы, основное содержимое таблицы</tbody> -->
+    <table id="table-1" class="table-1">
+        <!-- <table id="table-1">- id - присваем уникальный id, что бы потом к нему обращаться:
+            .class -могут быть одинаковыми для нескольких элементов, чтобы было удобнее присваивать стили -->
+        <thead>   
+          <tr>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Телефон</th>
+          </tr>  
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>Михаил</td>
+                <td>Иванов</td>
+                <td>123456789</td>
+            </tr>
+
+            <tr>
+                <td>Семен</td>
+                <td>Сидоров</td>
+                <td>258147369</td>
+            </tr>
+
+            <tr>
+                <td>Василий</td>
+                <td>Петров</td>
+                <td>12345789</td>
+            </tr>
+
+            <tr>
+                <td>Иван</td>
+                <td>Сидоров</td>
+                <td>12345589</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+    <img src="img/Без названия.jpeg" alt="смешной котик" width="200px" height="200px"/>
+</body>
+</html>
